@@ -54,7 +54,7 @@ export default function BookingPage() {
     setLoading(true)
 
     try {
-      const booking = addBooking({
+      const booking = await addBooking({
         yachtId: yacht.id,
         yachtName: yacht.name,
         userId: user!.id,
